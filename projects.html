@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sample student projects by Faith Mogire in graphic design and creative technology.">
+  <title>Projects | Faith Mogire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark">FM</span> Faith Mogire</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <h1>My Projects</h1>
+        <p>A look at my work in graphic design and front-end development.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3">
+
+          <!-- PROJECT 1 -->
+          <article class="card project-card reveal">
+            <div class="project-visual v-poster" role="img" aria-label="Illustration of a poster design">
+              <div class="poster"><div class="circle"></div><div class="line"></div><div class="line s"></div><div class="line xs"></div></div>
+              <!-- Add your real poster as images/poster.jpg and it will replace this illustration -->
+              <img class="project-img fit-whole" src="images/poster.jpg" alt="Creative poster design by Faith Mogire">
+            </div>
+            <div class="project-body">
+              <span class="category">Graphic Design</span>
+              <h3>Creative Poster Design</h3>
+              <p>A visually engaging promotional poster designed using principles of color, typography, spacing, and visual hierarchy.</p>
+              <ul class="chips">
+                <li class="chip">Canva</li><li class="chip">Typography</li><li class="chip">Color Theory</li><li class="chip">Design Principles</li>
+              </ul>
+              <div class="project-footer"><button type="button" class="btn btn-outline view-project">View Project</button></div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="card project-card reveal">
+            <div class="project-visual v-brand" role="img" aria-label="Illustration of a brand identity board">
+              <div class="brand-board">
+                <div class="brand-logo">B</div>
+                <div class="swatches"><i style="background:#204E74"></i><i style="background:#7FB2DB"></i><i style="background:#EAF2F8"></i></div>
+              </div>
+              <!-- Add your real brand board as images/brand.jpg and it will replace this illustration -->
+              <img class="project-img" src="images/brand.jpg" alt="Brand identity project by Faith Mogire">
+            </div>
+            <div class="project-body">
+              <span class="category">Branding</span>
+              <h3>Brand Identity Design</h3>
+              <p>A branding project for a small business, featuring a logo design, color palette, typography, and brand presentation.</p>
+              <ul class="chips">
+                <li class="chip">Canva</li><li class="chip">Logo Design</li><li class="chip">Color Theory</li><li class="chip">Brand Identity</li>
+              </ul>
+              <div class="project-footer"><button type="button" class="btn btn-outline view-project">View Project</button></div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="card project-card reveal">
+            <div class="project-visual v-web" role="img" aria-label="Illustration of a website landing page">
+              <div class="browser">
+                <div class="browser-top"><i></i><i></i><i></i></div>
+                <div class="browser-body">
+                  <div><div class="l1"></div><div class="l2"></div><div class="l2" style="width:70%"></div><div class="btn-mini"></div></div>
+                  <div class="pic"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="category">Web Development</span>
+              <h3>Responsive Personal Landing Page</h3>
+              <p>A beginner-friendly website landing page designed to demonstrate layout, responsive design, and basic front-end development.</p>
+              <ul class="chips">
+                <li class="chip">HTML</li><li class="chip">CSS</li><li class="chip">JavaScript</li>
+              </ul>
+              <div class="project-footer"><a class="btn btn-outline" href="index.html">View Project</a></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Preview window: filled in by script.js when "View Project" is clicked -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <div class="lightbox-box">
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close preview">×</button>
+        <h3 id="lightbox-title"></h3>
+        <div class="lightbox-body" id="lightbox-body"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Faith Mogire</strong>
+          <p>Computer Science Student | Aspiring Graphic &amp; Web Designer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">© <span id="year">2026</span> Faith Mogire. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Faith Mogire, Computer Science student and aspiring designer.">
+  <title>Contact | Faith Mogire</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark">FM</span> Faith Mogire</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Contact Me</h1>
+        <p>I'd love to hear from you. Say hello, ask a question or share an idea.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <div class="card reveal">
+          <h2>Send Me a Message</h2>
+          <p>Fill in the form below. When you press the button, your email app will open with the message ready to send.</p>
+          <form id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <p class="field-error" id="name-error" aria-live="polite"></p>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <p class="field-error" id="email-error" aria-live="polite"></p>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+              <p class="field-error" id="message-error" aria-live="polite"></p>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <aside class="reveal">
+          <div class="card" style="margin-bottom:1.5rem;">
+            <h2>Contact Details</h2>
+            <ul class="contact-list">
+              <li><span class="ci" aria-hidden="true">👤</span><div><strong>Faith Mogire</strong><br>Computer Science Student</div></li>
+              <li><span class="ci" aria-hidden="true">✉️</span><div><strong>Email</strong><br><a href="mailto:mogiref01@gmail.com">mogiref01@gmail.com</a></div></li>
+              <li><span class="ci" aria-hidden="true">📞</span><div><strong>Phone</strong><br><a href="tel:+254112067671">0112067671</a></div></li>
+            </ul>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <strong>Faith Mogire</strong>
+          <p>Computer Science Student | Aspiring Graphic &amp; Web Designer</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p class="copyright">© <span id="year">2026</span> Faith Mogire. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
